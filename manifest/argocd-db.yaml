@@ -6,7 +6,7 @@ metadata:
     type: local
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteOnce
   capacity:
     storage: 500Mi
   persistentVolumeReclaimPolicy: Retain
@@ -20,7 +20,7 @@ metadata:
   name: db-pvc
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteOnce
   resources:
     requests:
       storage: 30Mi
