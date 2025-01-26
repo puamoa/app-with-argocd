@@ -72,7 +72,7 @@ jobs:
       with:
         repository: ${{ secrets.GIT_USERNAME }}/app-with-argocd
         ref: main
-        token: ${{ secrets.DOCKERHUB_TOKEN }}
+        token: ${{ secrets.TOKEN }}
 
     - name: Set up Image
       run: |
