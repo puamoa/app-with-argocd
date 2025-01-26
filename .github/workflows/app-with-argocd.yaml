@@ -70,9 +70,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: Lecture-SHIN/app-with-argocd
+        repository: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}
         ref: main
-        token: ${{ secrets.TOKEN }}
+        token: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Set up Image
       run: |
