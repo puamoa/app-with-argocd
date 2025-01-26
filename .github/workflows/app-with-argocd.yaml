@@ -70,7 +70,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}
+        repository: ${{ secrets.GIT_USERNAME }}/app-with-argocd
         ref: main
         token: ${{ secrets.DOCKERHUB_TOKEN }}
 
